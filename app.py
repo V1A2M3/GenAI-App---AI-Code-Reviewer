@@ -2,10 +2,10 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure API key
-genai.configure(api_key="AIzaSyD8_LN6yHSQNPzU5Aeu6NLEDiVt-isDBds")  # Replace with your actual API key
+genai.configure(api_key="AIzaSyD8_LN6yHSQNPzU5Aeu6NLEDiVt-isDBds")  
 
 # Streamlit UI
-st.title("🤖 AI Code Reviewer")
+st.title("Python AI Code Reviewer")
 st.write("Enter your Python code below and get a detailed review!")
 
 user_code = st.text_area("Enter Python code here ...", height=250)
