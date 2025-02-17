@@ -1,17 +1,3 @@
-import subprocess
-import sys
-
-# Install the package if not already installed
-def install_package(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# Install google-generativeai
-try:
-    import google.generativeai as genai
-except ImportError:
-    install_package("google-generativeai")
-    import google.generativeai as genai
-
 import streamlit as st
 import google.generativeai as genai
 
